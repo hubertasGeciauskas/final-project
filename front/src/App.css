@@ -1,0 +1,15 @@
+* {box-sizing: border-box  }
+.bg {
+    background-image: radial-gradient( circle 815px at 23.4% -21.8%,  rgba(9,29,85,1) 0.2%, rgba(0,0,0,1) 100.2% );
+    height: 100vh;
+}
+.notification-count {
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
