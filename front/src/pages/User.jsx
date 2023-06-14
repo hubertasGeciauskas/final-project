@@ -24,9 +24,6 @@ const User = ({socket}) => {
             console.log(user)
             dispatch(updateUser(user))})
     },[])
-
-
-
     const sendMessage = async () => {
         const message = {
             message: messageRef.current.value,

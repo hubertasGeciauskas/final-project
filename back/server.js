@@ -5,14 +5,10 @@ const cors = require(`cors`)
 const mainRouter = require("./router/mainRouter")
 require("./router/socketRouter")
 
-
-
 require(`dotenv`).config()
 
 app.use(cors())
 app.use(express.json())
-
-
 
 mongoose.connect(process.env.MONGO_KEY)
     .then(()=> {

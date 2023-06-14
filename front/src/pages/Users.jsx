@@ -14,10 +14,10 @@ const Users = ({socket}) => {
         socket.on("userUpdate", user => {
             console.log(user)
             dispatch(updateUser(user))})
-    },[])
+    },[dispatch])
 
     return (
-        <Box   mt={10}   >
+        <Box  mt={10}   >
 
             <Text ml={"auto"} mt={5} color={"white"} as={"b"} fontSize={"3xl"} >Existing Users:</Text>
 
